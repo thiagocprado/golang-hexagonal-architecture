@@ -15,9 +15,6 @@
 # Diretório de distribuição
 /dist/
 
-# Diretório de cache do Go
-/pkg/
-
 # Arquivos de dependências baixadas (módulos)
 vendor/
 
