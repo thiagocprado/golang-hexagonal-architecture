@@ -11,11 +11,11 @@ import (
 )
 
 type UserHandler struct {
-	usecase input.UserUseCase
+	useCase input.UserUseCase
 }
 
-func NewUserHandler(usecase input.UserUseCase) *UserHandler {
-	return &UserHandler{usecase}
+func NewUserHandler(useCase input.UserUseCase) *UserHandler {
+	return &UserHandler{useCase}
 }
 
 func (h *UserHandler) Save(w http.ResponseWriter, r *http.Request) {
@@ -27,7 +27,7 @@ func (h *UserHandler) Save(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 
-	user, err := h.usecase.Save(body)
+	user, err := h.useCase.Save(body)
 	if err != nil {
 		http.Error(w, err.Error(), http.StatusBadRequest)
 		return
@@ -40,7 +40,7 @@ func (h *UserHandler) Save(w http.ResponseWriter, r *http.Request) {
 func (h *UserHandler) FindByID(w http.ResponseWriter, r *http.Request) {
 	id := strings.Split(r.URL.Path, "/")[2]
 
-	user, err := h.usecase.FindByID(id)
+	user, err := h.useCase.FindByID(id)
 	if err != nil {
 		http.Error(w, err.Error(), http.StatusNotFound)
 		return
