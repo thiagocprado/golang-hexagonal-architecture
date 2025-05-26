@@ -3,7 +3,7 @@ package repository
 import (
 	"errors"
 
-	"github.com/thiagocprado/golang-hexagonal-architecture/internal/core/entity"
+	"github.com/thiagocprado/golang-hexagonal-architecture/internal/domain/entity"
 	"github.com/thiagocprado/golang-hexagonal-architecture/internal/port/output"
 )
 

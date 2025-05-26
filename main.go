@@ -5,7 +5,7 @@ import (
 
 	"github.com/thiagocprado/golang-hexagonal-architecture/internal/adapter/handler"
 	"github.com/thiagocprado/golang-hexagonal-architecture/internal/adapter/repository"
-	"github.com/thiagocprado/golang-hexagonal-architecture/internal/core/usecase"
+	"github.com/thiagocprado/golang-hexagonal-architecture/internal/domain/usecase"
 )
 
 func main() {

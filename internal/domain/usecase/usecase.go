@@ -2,7 +2,7 @@ package usecase
 
 import (
 	"github.com/google/uuid"
-	"github.com/thiagocprado/golang-hexagonal-architecture/internal/core/entity"
+	"github.com/thiagocprado/golang-hexagonal-architecture/internal/domain/entity"
 	"github.com/thiagocprado/golang-hexagonal-architecture/internal/port/input"
 	"github.com/thiagocprado/golang-hexagonal-architecture/internal/port/output"
 )
